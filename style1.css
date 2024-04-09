@@ -1,5 +1,9 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body{
-    background-color: aquamarine;
+    background-color: #68e5ec;
 }
 #container{
     width: 350px;
@@ -20,7 +24,22 @@ img{
 
 h1{
     color: #0A7E85;
-    font-family: Arial, Helvetica, sans-serif;
     width: 175px;
     margin-left: 87.5px;
+}
+
+input,label{
+    width: 300px;
+    height: 30px;
+    margin-left: 25px;
+    border-radius: 5px;
+}
+
+button{
+    width: 306px;
+    height: 30px;
+    margin-left: 25px;
+    background-color: #0A7E85;
+    border: white;
+    border-radius: 5px;
 }

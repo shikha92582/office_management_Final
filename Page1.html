@@ -7,15 +7,24 @@
     <link rel="stylesheet" href="style1.css">
 </head>
 <body>
+    <form action="server">
     <div id="container">
         <div><img src="Image1.PNG" alt="logo"></div>
         <div><h1>EMPLOYEE</h1></div>
         <div id="div1">
-            <label for="email">Email</label>
+            <label for="email">Email:</label>
             <br>
-            <input type="text" id="email" placeholder="youremail@gmail.com">
+            <input type="text" id="email" placeholder="youremail@gmail.com" name="email">
+            <br><br>
+            <label for="pass">Password:</label>
+            <br>
+            <input type="text" id="pass" placeholder="enter your password" name="password">
         </div>
-        <div></div>
+        <br>
+        <div>
+            <button type="submit">LOG IN</button>
+        </div>
     </div>
+    </form>
 </body>
 </html>
