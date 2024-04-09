@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #B3E7EA;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+
+}
+
+.left {
+    background-color: #52A19C;
+    width: 20%;
+}
+
+.admin {
+    width: 100%;
+    height: 100px;
+    position: relative;
+}
+
+.admin img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+    left: 35px;
+}
+
+.admin-name {
+
+    font-size: 23px;
+    position: absolute;
+    top: 45px;
+    left: 95px;
+    font-weight: bold;
+    position: relative;
+
+}
+
+.admin-name::before {
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: black;
+}
+
+.nav {
+    margin-top: 15px;
+}
+
+li {
+    list-style: none;
+    padding-left: 20px;
+    padding-bottom: 25px;
+}
+
+li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    position: relative;
+}
+
+li a::after {
+    position: absolute;
+    bottom: -6px;
+    left: -20px;
+    content: "";
+    width: 200px;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.839);
+    opacity: 0.6;
+}
+
+
+.right {
+    width: 100%;
+    position: relative;
+
+}
+
+.h1 {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+
+.h3 {
+    position: absolute;
+    top: 100px;
+    left: 30px;
+}
+
+.table {
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+}
+
+button {
+    background-color: red;
+    padding: 10px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.head {
+    margin-top: 20px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

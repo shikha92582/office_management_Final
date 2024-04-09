@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background: #B3E7EA;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    .form-group input, .form-group select, .form-group textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .form-group textarea {
+        resize: vertical;
+    }
+    .form-submit {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      
+    }
+     
+    .form-submit:hover {
+        background-color: #0056b3;
+    }
+
+    .company-container{
+    margin-top: 10px;
+    max-width: 1230px;
+    margin-inline: auto;
+    background-color: #fff;
+    display:flex;
+    height: 120px;
+    width: 2000px;
+    justify-content: space-between;
+    align-items: stretch;
+    border-radius: 10px;
+}
+
+.text{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 1px;
+    padding-top: 14px;
+}
+
+</style>
+</head>
+<body>
+ <div 
+            <button><a href="Dashboard.html" >Home</a></button> 
+        </div>
+
+<h2>Business Enquiry</h2>
+
+<form action="/submit-your-form-endpoint" method="POST">
+    <div class="form-group"> 
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required>
+    </div>
+    <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone">
+    </div>
+    <div class="form-group">
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <!-- Add a few countries as examples. In a real application, you'd likely populate this list from a database or a country list API -->
+            <option value="">Select a country</option>
+            <option value="US">India</option>
+            <option value="CA">Canada</option>
+            <option value="GB">United Kingdom</option>
+            <option value="AU">Australia</option>
+            <option value="IN">United States</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="feedback">Tell us a bit more about your enquiry*</label>
+        <textarea id="feedback" name="feedback" rows="5" required></textarea>
+    
+   <div <button><a href="Dashboard.html" class="form-submit">Submit</a></button> </div> 
+</form>  
+
+<br>
+<div class="form-submit">
+   <img class="frame-icon1" alt="" src="./icons/employee.svg" />
+
+
+
+   <a href="billing.html" class="employee">Billing details</a>
+</div>
+
+
+<div class="company-container">
+    <div class="text"><b>TRUSTED BY <br>STARTUPS <br>AND FORTUNE <br>500 COMPANIES</b></div>
+    <div class="image"><img src="Microsoft_logo.png" alt=""></div>
+    <div class="image"><img src="accenture.png" alt=""></div>
+    <div class="image"><img src="IBM.png" alt=""></div>
+    <div class="image"><img src="Adobe.png" alt=""></div> 
+</div>
+
+ 
+</body>
+</html>

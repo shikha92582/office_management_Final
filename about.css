@@ -1,0 +1,323 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: #B3E7EA;
+    overflow: hidden;
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    background-color: #B3E7EA;
+}
+
+.button {
+    width: 100%;
+    height: 50px;
+
+    position: relative;
+}
+
+.button button {
+    width: 120px;
+    padding: 5px;
+    font-size: 19px;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    height: 40px;
+    text-align: center;
+    position: absolute;
+    left: 340px;
+    top: 50px;
+    background-color: #52A19C;
+    color: white;
+    letter-spacing: 1.3px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.aboutUs {
+    padding-top: 35px;
+    width: 100%;
+    padding-left: 3%;
+    padding-right: 5%;
+    margin-bottom: 15px;
+}
+
+.aboutUs h1 {
+    font-size: 30px;
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.aboutUs h1::after {
+    content: ' ';
+    width: 8%;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 1px;
+    background-color: black;
+}
+
+.aboutUs p {
+    font-size: 18px;
+    line-height: 25px;
+    padding-right: 40px;
+    word-spacing: 1px;
+}
+
+.values {
+    margin-top: 20px;
+    display: flex;
+
+}
+
+.right {
+
+    width: 200px;
+    height: 200px;
+    padding-left: 40px;
+}
+
+.left {
+    width: 60%;
+    padding-left: 40px;
+
+}
+
+.img {
+
+    width: 400px;
+    aspect-ratio: 1;
+    border-radius: 10px;
+}
+
+.ourMission {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.ourMission h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.ourMission h1::after {
+    content: '';
+    width: 19%;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 1px;
+    background-color: black;
+}
+
+.ourMission p {
+    font-size: 18px;
+    line-height: 25px;
+    padding-right: 40px;
+
+    word-spacing: 1px;
+}
+
+.apart h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    position: relative;
+
+}
+
+.apart h1::after {
+    content: '';
+    width: 25%;
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    height: 1px;
+    background-color: black;
+}
+
+.apart p {
+    font-size: 18px;
+    line-height: 25px;
+    padding-right: 40px;
+
+    word-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+span {
+    font-weight: bold;
+}
+
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen  and (max-width: 600px) {
+
+    .aboutUs {
+        padding-left: 36px;
+    }
+
+    .values {
+        display: block;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    .img {
+        width: 80%;
+        margin: 0 auto;
+        aspect-ratio: 1;
+        border-radius: 10px;
+    }
+
+    .apart h1::after {
+        width: 70%;
+    }
+
+    .ourMission h1::after {
+        width: 50%;
+    }
+
+    .aboutUs h1::after {
+        width: 40%;
+    }
+
+    .button {
+        height: 60px;
+    }
+
+    .button button {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 601px) and (max-width: 750px) {
+
+    .about{
+        height: 100vh;
+    }
+    .aboutUs {
+        padding-left: 36px;
+    }
+
+    .values {
+        display: block;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+        padding-left: 150px;
+    }
+
+    .img {
+        width: 400px;
+        margin: 0 auto;
+        aspect-ratio: 1;
+        border-radius: 10px;
+    }
+
+    .apart h1::after {
+        width: 70%;
+    }
+
+    .ourMission h1::after {
+        width: 50%;
+    }
+
+    .aboutUs h1::after {
+        width: 40%;
+    }
+
+    .button {
+        height: 60px;
+    }
+
+    .button button {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 751px) and (max-width: 950px) {
+    .about{
+        height: 100vh;
+    }
+    .aboutUs {
+        padding-left: 36px;
+    }
+
+    .values {
+        display: block;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        margin-top: 10px;
+        width: 100%;
+        height: auto;
+        padding-left: 150px;
+    }
+
+    .img {
+        width: 80%;
+        margin: 0 auto;
+        aspect-ratio: 1;
+        border-radius: 10px;
+    }
+
+    .apart h1::after {
+        width: 70%;
+    }
+
+    .ourMission h1::after {
+        width: 50%;
+    }
+
+    .aboutUs h1::after {
+        width: 40%;
+    }
+
+    .button {
+        height: 60px;
+    }
+
+    .button button {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
